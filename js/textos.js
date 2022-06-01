@@ -1,4 +1,4 @@
-export const textoNodos = [
+const textoNodos = [
     {
         id: 1,
         texto: "Despiertas en un lugar extraño, tu visión es borrosa y ves un frasco de un liquido espeso frente a ti",
@@ -102,7 +102,7 @@ export const textoNodos = [
 
     {
         id: 411,
-        texto: "Apesar de tus intentos discretos, la guardia local te encuentra haciendo de las tuyas y sos arrojado a la carcel del pueblo",
+        texto: "Apesar de tu discreción y sigilo, la guardia local te encuentra haciendo de las tuyas y sos arrojado a la carcel del pueblo",
         opciones: [
             {
                 texto: "Empezar de nuevo",
@@ -186,6 +186,10 @@ export const textoNodos = [
                 texto: "Al no tener forma de enfrentarlo, le arrojas lo unico que llevas encima, el frasco",
                 requiredEstado: (estadoActual) => estadoActual.frasco,
                 siguienteTexto: 12
+            },
+            {
+                texto: "No trajiste nada para defenderte de la bestia, te pones a rezar",
+                siguienteTexto: 13
             }
 
 
@@ -237,6 +241,17 @@ export const textoNodos = [
                 siguienteTexto: -1
             }
         ]
+    },
+    {
+        id: 13,
+        texto: "La bestia te mira confundida, al no entender la situacion, simplemente procede a comerte",
+        opciones:[
+            {
+                texto: "Jugar de nuevo",
+                siguienteTexto: -1
+            }
+        ]
+        
     }
 
 ]

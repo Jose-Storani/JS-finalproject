@@ -62,15 +62,16 @@ div img{
 .container{
     width: 800px;
     max-width: 80%;
-    outline: 2px solid rgb(195, 126, 126);
-    background-color: rgb(92, 92, 92);
+    
+    background-color: rgb(0, 0, 0);
     padding: 10px;
-    color:rgb(0, 0, 0);
+    color:hsl(0, 99%, 37%);
     font-weight: bold;
     font-size:20px;
     text-align: center;
     border-radius: 5px;
     box-shadow: 0 0 10px 2px rgb(134, 27, 27) ;
+    
 }
 
 .btn-grid{
@@ -84,8 +85,8 @@ div img{
 
 
 .boton{
-    background-color:hsl(200, 100%, 50%);
-    border: 2px solid hsl(200, 100%, 30%);
+    background-color:hsl(0, 98%, 26%);
+    border: none;
     border-radius: 5px;
     padding: 5px 10px;
     color: rgb(0, 0, 0);
@@ -100,8 +101,8 @@ div img{
 
 @keyframes pulsar{
     0%{
-        box-shadow: 0 0 5px #034f64,
-        0 0 50px #280262
+        box-shadow: 0 0 25px #034f64,
+        0 0 40px #000000
         ;
     }
 }
