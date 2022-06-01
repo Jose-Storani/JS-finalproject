@@ -121,3 +121,8 @@ canvas{
     margin: 0 auto;
     
 }
+
+#background{
+    background-color: #000000;
+    background-image: none;
+}
