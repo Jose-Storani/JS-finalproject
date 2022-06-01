@@ -90,7 +90,7 @@ function dibujar() {
             colorBola = getRandomColor()
         }
         else {
-            // alert("GAME OVER");
+            // ("GAME OVER");
             document.location.reload();
         }
     }
