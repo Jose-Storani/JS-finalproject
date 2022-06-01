@@ -97,7 +97,7 @@ div img{
     
 }
 
-.boton:hover{
+.boton:hover, img:hover{
     animation: pulsar 1s ease-in-out;
 }
 
