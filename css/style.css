@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../assets/imagenes/wizard-dark-dungeon-illustration.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+div {
+    border: solid red 2px;
+}
+
+div h1 {
+    color: rgb(219, 219, 219);
+    font-family: 'Press Start 2P', cursive;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
