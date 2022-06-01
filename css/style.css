@@ -8,15 +8,15 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-}
-
-div {
-    border: solid red 2px;
-}
-
-div h1 {
-    color: rgb(219, 219, 219);
     font-family: 'Press Start 2P', cursive;
+}
+
+
+
+
+div h1, div p {
+    color: rgb(219, 219, 219);
+    
     animation-duration: 5s;
     animation-name: aparecer;
     animation-iteration-count: 1;
@@ -24,6 +24,10 @@ div h1 {
     animation-fill-mode: both;
 }
 
+div img{
+    border-radius: 25px;
+
+}
 
 @keyframes aparecer {
     0% {
@@ -34,3 +38,73 @@ div h1 {
         opacity: 1;
     }
 }
+
+
+/* TEXT ADVENTURE */
+
+
+.bodyTextAdventure{
+    background-image: url(../assets/imagenes/aldea.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+
+.container{
+    width: 800px;
+    max-width: 80%;
+    outline: 2px solid rgb(195, 126, 126);
+    background-color: rgb(92, 92, 92);
+    padding: 10px;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    font-size:20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px rgb(134, 27, 27) ;
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap:10px;
+    margin-top: 20px;
+    text-align: center;
+    ;  
+}
+
+
+.boton{
+    background-color:hsl(200, 100%, 50%);
+    border: 2px solid hsl(200, 100%, 30%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: rgb(0, 0, 0);
+    outline: none;
+    cursor:pointer;
+    
+}
+
+.boton:hover{
+    animation: pulsar 1s ease-in-out;
+}
+
+@keyframes pulsar{
+    0%{
+        box-shadow: 0 0 5px #034f64,
+        0 0 50px #280262
+        ;
+    }
+}
+
+
+
