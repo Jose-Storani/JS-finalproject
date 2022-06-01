@@ -59,7 +59,7 @@ div img{
 }
 
 
-.container{
+.contenedor{
     width: 800px;
     max-width: 80%;
     
@@ -85,7 +85,7 @@ div img{
 
 
 .boton{
-    background-color:hsl(0, 98%, 26%);
+    background-color:hsl(0, 65%, 35%);
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
@@ -99,6 +99,10 @@ div img{
     animation: pulsar 1s ease-in-out;
 }
 
+div a button {
+    color: red;
+}
+
 @keyframes pulsar{
     0%{
         box-shadow: 0 0 25px #034f64,
@@ -109,3 +113,11 @@ div img{
 
 
 
+/* BRICKBREAKER */
+
+canvas{
+    background-color: rgb(120, 136, 237);
+    display: block;
+    margin: 0 auto;
+    
+}
